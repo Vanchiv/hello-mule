@@ -24,7 +24,7 @@ jobs:
             'develop') export environment='Sandbox';;
           esac;
           echo $environment;
-          mvn mule:deploy -Dworkers=0.1 -DworkerType=Micro -Denvironment=$environment -Dredeploy=true -DmuleVersion=3.9.0 -s settings.xml
+          mvn mule:deploy -Dworkers=0.1 -DworkerType=Micro -Denvironment=$environment -Dredeploy=true -DmuleVersion=4.3.0 -Danypoint.uri=https://anypoint.mulesoft.com -DbusinessGroup=Vanchiv  -s settings.xml
       - save_cache:
           paths:
             - ~/.m2
