@@ -38,8 +38,7 @@
       						<username>${username}</username>
       						<password>${password}</password>
       						<applicationName>hello-mule</applicationName>
-      						<environment>${environment}</environment>
-      						<region>${region}</region>
+						<environment>${environment}</environment>
       						<workers>${workers}</workers>
       						<workerType>${workerType}</workerType>
 						<objectStoreV2>true</objectStoreV2>
