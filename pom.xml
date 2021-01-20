@@ -31,13 +31,23 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<deploymentType>cloudhub</deploymentType>
-					<muleVersion>${muleVersion}</muleVersion>
-					<username>${username}</username>
-					<password>${password}</password>
-					<redeploy>${redeploy}</redeploy>
-					<environment>${environment}</environment>
-					<workerType>${workerType}</workerType>
+   					<cloudHubDeployment>
+      						<uri>${anypoint.uri}</uri>
+      						<muleVersion>${muleVersion}</muleVersion>
+      						<businessGroup>${businessGroup}</businessGroup>
+      						<username>${username}</username>
+      						<password>${password}</password>
+      						<applicationName>hello-mule</applicationName>
+      						<environment>${environment}</environment>
+      						<region>${region}</region>
+      						<workers>${workers}</workers>
+      						<workerType>${workerType}</workerType>
+						<objectStoreV2>true</objectStoreV2>
+						<deploymentTimeout>5000000</deploymentTimeout>
+						<properties>
+                     					<env>${env}</env>
+                  				</properties>
+   					</cloudHubDeployment>
 				</configuration>
 				<executions>
  					<execution>
