@@ -39,7 +39,7 @@
       						<password>${password}</password>
       						<applicationName>hello-mule</applicationName>
 						<environment>${environment}</environment>
-      						<workers>${workers}</workers>
+      						<workers>0.1</workers>
       						<workerType>${workerType}</workerType>
 						<objectStoreV2>true</objectStoreV2>
 						<deploymentTimeout>5000000</deploymentTimeout>
