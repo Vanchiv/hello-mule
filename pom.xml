@@ -30,7 +30,7 @@
                         <muleVersion>${muleVersion}</muleVersion>
                         <username>${username}</username>
                         <password>${password}</password>
-                        <applicationName>hello-mule</applicationName>
+                        <applicationName>hello-mule-vanchiv</applicationName>
                         <environment>Sandbox</environment>
                         <workerType>${workerType}</workerType>
                         <workers>${workers}</workers>
